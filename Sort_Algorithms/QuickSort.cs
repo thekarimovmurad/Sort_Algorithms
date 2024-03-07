@@ -14,7 +14,6 @@ namespace Sort_Algorithms
                 return;
             QuickSortAlgorithm(array, 0, array.Length - 1);
         }
-
         private static void QuickSortAlgorithm<T>(T[] array, int left, int right) where T : IComparable
         {
             if (left < right)
@@ -24,7 +23,6 @@ namespace Sort_Algorithms
                 QuickSortAlgorithm(array, pivotIndex + 1, right);
             }
         }
-
         private static int Partition<T>(T[] array, int left, int right) where T : IComparable
         {
             T pivot = array[right];
@@ -40,7 +38,6 @@ namespace Sort_Algorithms
             Swap(array, i + 1, right);
             return i + 1;
         }
-
         private static void Swap<T>(T[] array, int i, int j)
         {
             T temp = array[i];

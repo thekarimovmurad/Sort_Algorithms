@@ -27,7 +27,6 @@ namespace Sort_Algorithms
             int largest = i;
             int left = 2 * i + 1;
             int right = 2 * i + 2;
-
             if (left < n && array[left].CompareTo(array[largest]) > 0)
                 largest = left;
 
@@ -39,7 +38,6 @@ namespace Sort_Algorithms
                 T swap = array[i];
                 array[i] = array[largest];
                 array[largest] = swap;
-
                 Heapify(array, n, largest);
             }
         }

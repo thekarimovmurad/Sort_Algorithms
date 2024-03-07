@@ -14,7 +14,6 @@ namespace Sort_Algorithms
                 return;
             MergeSortAlgorithm(array, 0, array.Length - 1);
         }
-
         private static void MergeSortAlgorithm<T>(T[] array, int left, int right) where T : IComparable<T>
         {
             if (left < right)
